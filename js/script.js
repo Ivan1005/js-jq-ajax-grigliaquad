@@ -14,11 +14,11 @@ $(document).ready(function() {
         'success': function (risposta) {
             testo.text(risposta.response);
             if (risposta.response > 5){
-              $(testo).addClass('green');
-              $(testo).removeClass('giallo');
+              testo.addClass('green');
+              testo.removeClass('giallo');
             } else {
-              $(testo).addClass('giallo');
-              $(testo).removeClass('green');
+              testo.addClass('giallo');
+              testo.removeClass('green');
             }
         },
         'error': function () {
